@@ -1,0 +1,118 @@
+.ass1 div {
+    text-align: center;
+    width: 300px;
+    height: 60px;
+    /* margin: auto; */
+    line-height: 3.5;
+    margin: 20px auto;
+
+}
+.one, .Three {
+    background-color: #eee;
+}
+div:empty {
+    background-color: #ff0000;
+}
+
+.ass2 div{
+    background-color: #eee;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    padding: 20px;
+    height: 20px;
+    position: relative;
+    font-weight:bold ;
+}
+.ass2 div::first-letter {
+    /* background-color: red;
+    padding: 10px;
+    position: absolute;
+    top: 11px; */
+}
+.ass2 div::first-letter {
+    visibility: hidden;
+}
+.ass2 div::before {
+    content: "1";
+    width: 30px;
+    height: 40px;
+    line-height: 2.5;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: -15px;
+}
+.ass3 p {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+    width: 350px;
+    height: 15px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 5px solid #e91e63;
+    line-height: -2px;
+}
+.ass3 p::before{
+    content: attr(data-person);
+    padding: 20px;
+    text-align: center;
+    width: 50px;
+    height: 10px;
+    left: -120px;
+    top: 50%;
+    margin-top: -25px;
+    background-color: #ddd;
+    position: absolute;
+    margin-right: 15px;
+}
+.ass3 p::after {
+    content: "";
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent #e91e63 transparent transparent;
+    /* width: 15px;
+    height: 15px; */
+    left: -25px;
+    top: 50%;
+    margin-top: -7.5px;
+    /* background-color: #e91e63; */
+    position: absolute;
+}
+
+.ass4 p {
+    background-color: #ddd;
+    width: fit-content;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto ;
+    counter-increment: count;
+    position: relative;
+}
+
+.ass4 p::before {
+    content: counter(count);
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    line-height: 56px;
+    background-color: #f44336;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: -58px;
+    top: 50%;
+    margin-top:-29px;
+}
+.ass4 p::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 58px;
+    background-color: #f44336;
+    right: 0px;
+    top: 0px;
+}

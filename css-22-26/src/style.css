@@ -1,0 +1,46 @@
+.ass1 div {
+  border: 5px red solid;
+  padding: 20px 40px;
+}
+.ass1 div p {
+  text-align: center;
+  font-size: 3rem;
+  background-color: #eee;
+  border: inherit;
+  padding: inherit;
+}
+
+.ass2 p{
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.ass2 .one {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.ass2 .two {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+}
+.ass2 .three {
+  font-family: 'Jomhuria', cursive;
+  font-weight: 400;
+}
+
+.ass3 html {
+  font-size: 20px;
+}
+.ass3 p {
+  text-align: center;
+}
+.ass3 .one {
+  font-size: 2.5rem;
+}
+.ass3 .two {
+  font-size: 2rem;
+}
+.ass3 .three {
+  font-size: 1.5rem;
+}

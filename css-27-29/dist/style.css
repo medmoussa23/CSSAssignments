@@ -1,0 +1,50 @@
+.parent {
+  width: 1000px;
+  background-color: #B7D4EB;
+  padding: 15px 0px;
+  margin: auto;
+}
+.parent .full, .three, .forth, .half {
+  background-color: #789395;
+  text-align: center;
+  padding: 10px 0px;
+  margin-left: 15px;
+}
+.parent .full{
+  width: calc(100% - 30px);
+}
+.parent .three {
+  float: left;
+  width: calc((100% - 60px)/3);
+  margin-top: 15px; 
+}
+.parent .forth {
+  float: left;
+  width: calc((100% - 75px)/4);
+  margin-top: 15px;  
+}
+.parent .half {
+  float:left;
+  width: calc((100% - 45px)/2);
+  margin-top: 15px;
+}
+.clear {
+  clear: both;
+}   
+
+
+.ass2 div {
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: rgba(179, 179, 179); 
+  color: black;
+}
+.ass2 .one, two{
+  background-color: rgba(179, 179, 179, 0.1);   
+}
+.ass2 .two{
+  opacity: 0.1;
+}

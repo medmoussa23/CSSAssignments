@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+.ass1 div {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 5px;
+    border-left: 5px #f44336 solid;
+    border-right: 5px #673ab7 solid;
+    margin: 20px auto;
+    width: 600px;
+    padding: 20px;
+    position: relative;
+}
+.ass1 div::first-letter {
+    color: #f44336;
+}
+
+.ass1 div::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 600px;
+    height: 5px;
+    background-image: linear-gradient(to right, #f44336 20%, #2297f4 20%,  #2297f4 40%, #4caf50 40%, #4caf50 60%, #e91e63 60%,  #e91e63 80%,  #673ab7 80%);
+}
+.ass1 div::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    width: 600px;
+    height: 5px;
+    background-image: linear-gradient(to right, #f44336 20%, #2297f4 20%,  #2297f4 40%, #4caf50 40%, #4caf50 60%, #e91e63 60%,  #e91e63 80%,  #673ab7 80%);
+}
+.ass2 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: fit-content;
+}
+.ass2 div {
+    position: relative;
+    margin: 10px;
+}
+.ass2 .input {
+    background-color: #eee;
+    width: 600px;
+    padding: 15px;
+    caret-color: red;
+    border: none;
+}
+.ass2 div::before{
+    content: '';
+    width: 600px;
+    height: 3px;
+    position: absolute;
+    background-image: linear-gradient(
+        to right,
+        red 50%,
+        green 50%
+    );
+    bottom: 0px;
+    left: px;
+}

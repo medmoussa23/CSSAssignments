@@ -1,0 +1,42 @@
+.ass1 div {
+  display: inline-block;
+  padding:50px;
+  margin: 20px;
+  outline: 5px solid black;
+}
+
+.ass1 .c1 {
+  border: 5px solid red;
+}
+.ass1 .c2 {
+  border-color: blue green;
+  border-width: 5px;
+  border-style: solid;
+}
+.ass1 .c3 {
+  border-color: red green blue yellow;
+  border-style: dashed;
+  border-width: 5px;
+}
+
+.ass2 div {
+  width: 400px;
+  padding: 30px;
+  margin: 20px;
+  background-color: #E5E3C9;
+}
+.ass2 .class1 {
+  visibility:visible;
+  border-left: 10px solid #e91e69;
+  outline: 5px solid #E5E3C9;
+}
+.ass2 .class2 {
+  visibility: hidden;
+  border-left: 10px solid #e91e69;
+  outline: 5px solid #E5E3C9;
+}
+.ass2 .class3 {
+  visibility: visible;
+  border-left: 10px solid blue;
+  outline: 5px solid #E5E3C9;
+}

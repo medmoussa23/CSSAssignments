@@ -1,0 +1,145 @@
+html {
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+}
+
+.ass_1 {
+  width: fit-content;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.ass_1 div {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 25px;
+  border: 3px solid black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 0 #2196f3, -5px -5px 0 #e91e63;
+  position: relative;
+  counter-increment: num;
+}
+
+.ass_1 div::before {
+  content: counter(num);
+  background-color: black;
+  color: white;
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  line-height: 1.5;
+  position: absolute;
+  left: 38.5px;
+  top: 0px;
+  margin-top: -12.5px;
+}
+
+.ass_1 div::after {
+  content: "Element";
+  color: black;
+  position: absolute;
+  left: 22.5px;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.ass_2 {
+  width: fit-content;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.ass_2 div {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  box-shadow: 0px 0px 15px 0px inset;
+  border-radius: 0 50%;
+  border-top-left-radius: 10px 20px;
+  border-bottom-right-radius: 10px 20px;
+}
+
+.ass_3 {
+  width: 600px;
+  height: 330px;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px 0;
+  position: relative;
+}
+
+.ass_3::before {
+  content: "";
+  position: absolute;
+  background-color: #2196f3;
+  width: 2px;
+  height: 320px;
+  left: 300px;
+  z-index: 2;
+}
+
+.ass_3::after {
+  content: "Or";
+  position: absolute;
+  text-align: center;
+  background-color: #2196f3;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 285px;
+  top: 50%;
+  margin-top: -25px;
+  z-index: 3;
+}
+
+.ass_3 .basic,
+.ass_3 .pro {
+  background: #eeeeee;
+  width: 250px;
+  height: 280px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin: auto;
+  display: inline-block;
+}
+
+.ass_3 .basic {
+  margin-right: 40px;
+}
+
+.ass_3 .basic .basreg,
+.ass_3 .pro .proreg {
+  background-color: #2196f3;
+  color: white;
+  width: 95%;
+  height: 40px;
+  font-size: 1.2rem;
+  line-height: 2.2;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.ass_3 .basic .bascrc,
+.ass_3 .pro .procrc {
+  background-color: #dddddd;
+  width: 200px;
+  height: 200px;
+  font-size: 1.2rem;
+  line-height: 2.2;
+  border-radius: 50%;
+  margin-left: 25px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 6.2;
+}

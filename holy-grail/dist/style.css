@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+.holy-grail {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color: white;
+  height: 200px;
+  align-content: flex-start;
+}
+.holy-grail div {
+  padding: 10px;
+}
+.header {
+  background-color: #ff4500;
+  flex-basis: 100%;
+  height: 40px;
+}
+.left-sidebar {
+  background-color: #1e90ff;
+  height: 160px;
+  flex-basis: calc(100%/3);
+}
+.main-content {
+  background-color: #483d8b;
+  flex-basis: calc(100%/3);
+}
+.right-sidebar {
+  background-color: #228b22;
+  flex-basis: calc(100%/3);
+}
+.footer {
+  background-color: #ff1494;
+  flex-basis: 100%;
+  height: 40px;
+}
